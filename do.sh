@@ -318,5 +318,5 @@ case "$CMD" in
     echo "Other:   $0 {lint}"
     RETVAL=1
 esac
-
+ 
 exit $RETVAL
