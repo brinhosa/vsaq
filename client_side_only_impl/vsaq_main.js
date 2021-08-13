@@ -412,10 +412,10 @@ vsaq.initQuestionnaire = function() {
   var uri = new goog.Uri(document.location.search);
   var questionnairePath =
       /** @type {string} */ (uri.getQueryData().get('qpath', ''));
-  if (questionnairePath && !templatePattern.test(questionnairePath))
-    throw new goog.debug.Error(
-        'qpath must be a relative path and must match this pattern: ' +
-        templatePattern.toString());
+  //if (questionnairePath && !templatePattern.test(questionnairePath))
+  //  throw new goog.debug.Error(
+   //     'qpath must be a relative path and must match this pattern: ' +
+    //    templatePattern.toString());
 
   var extensionPath =
       /** @type {string} */ (uri.getQueryData().get('extension', ''));
