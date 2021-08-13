@@ -27,12 +27,12 @@ vsaq_assert_dependencies() {
   # Check if required binaries are present.
   type "$PYTHON_CMD" >/dev/null 2>&1 || { echo >&2 "Python is required to build VSAQ."; exit 1; }
   #type ant >/dev/null 2>&1 || { echo >&2 "Ant is required to build VSAQ."; exit 1; }
-  type java >/dev/null 2>&1 || { echo >&2 "Java is required to build VSAQ."; exit 1; }
-  jversion=$(java -version 2>&1 | grep version | awk -F '"' '{print $2}')
-  if [[ $jversion < "1.7" ]]; then
-    echo "Java 1.7 or higher is required to build VSAQ."
-    exit 1
-  fi
+  #type java >/dev/null 2>&1 || { echo >&2 "Java is required to build VSAQ."; exit 1; }
+  #jversion=$(java -version 2>&1 | grep version | awk -F '"' '{print $2}')
+  #if [[ $jversion < "1.7" ]]; then
+  #  echo "Java 1.7 or higher is required to build VSAQ."
+  #  exit 1
+  #fi
   # Check if required files are present.
   files=(third_party/closure-library \
     third_party/closure-templates/target \
